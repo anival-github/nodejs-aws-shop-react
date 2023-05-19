@@ -36,3 +36,8 @@ Runs tests in console, in browser or with coverage.
 ### `lint`, `prettier`
 
 Runs linting and formatting for all files in `src` folder.
+
+
+<!-- ToD Store the links to
+ - CloudFront URL and
+ - S3-website in README.md file. -->
