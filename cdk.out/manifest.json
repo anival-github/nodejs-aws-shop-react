@@ -201,10 +201,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-OAI-0.0.1/Resource": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-OAI-0.0.3/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALOAI0018602E9E9",
+            "data": "ANIVALStaticWebsiteANIVALOAI0038DF8F079",
             "trace": [
               "new OriginAccessIdentity (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-cloudfront/lib/origin-access-identity.ts:112:21)",
               "new StaticSite (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/static-site.ts:12:27)",
@@ -230,10 +230,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket-0.0.1/Resource": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALStatickBucket00133B625F0",
+            "data": "ANIVALStaticWebsiteANIVALStatickBucket575AC94A",
             "trace": [
               "new Bucket (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
               "new StaticSite (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/static-site.ts:17:24)",
@@ -259,10 +259,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket-0.0.1/Policy/Resource": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket/Policy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALStatickBucket001Policy3577E0F1",
+            "data": "ANIVALStaticWebsiteANIVALStatickBucketPolicy2B7417FB",
             "trace": [
               "new BucketPolicy (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:53:21)",
               "Bucket.addToResourcePolicy (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:605:21)",
@@ -291,10 +291,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket-0.0.1/AutoDeleteObjectsCustomResource/Default": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVALStatickBucket/AutoDeleteObjectsCustomResource/Default": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALStatickBucket001AutoDeleteObjectsCustomResource579C439E",
+            "data": "ANIVALStaticWebsiteANIVALStatickBucketAutoDeleteObjectsCustomResourceA465F59C",
             "trace": [
               "new CustomResource (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/custom-resource.ts:133:21)",
               "Bucket.enableAutoDeleteObjects (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:2151:28)",
@@ -322,10 +322,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-distribution-0.0.1/CFDistribution": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-distribution-0.0.3/CFDistribution": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALdistribution001CFDistributionEDD6FB9F",
+            "data": "ANIVALStaticWebsiteANIVALdistribution003CFDistributionC12F5B6D",
             "trace": [
               "new CloudFrontWebDistribution (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-cloudfront/lib/web-distribution.ts:980:26)",
               "new StaticSite (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/static-site.ts:38:26)",
@@ -351,10 +351,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-Bucket-Deployment-0.0.1/AwsCliLayer/Resource": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-Bucket-Deployment-0.0.3/AwsCliLayer/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALBucketDeployment001AwsCliLayer39837CE6",
+            "data": "ANIVALStaticWebsiteANIVALBucketDeployment003AwsCliLayer74A87693",
             "trace": [
               "new LayerVersion (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-lambda/lib/layers.ts:202:39)",
               "new AwsCliLayer (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:11:5)",
@@ -382,10 +382,10 @@
             ]
           }
         ],
-        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-Bucket-Deployment-0.0.1/CustomResource/Default": [
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/ANIVAL-Bucket-Deployment-0.0.3/CustomResource/Default": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ANIVALStaticWebsiteANIVALBucketDeployment001CustomResource7C85FE58",
+            "data": "ANIVALStaticWebsiteANIVALBucketDeployment003CustomResource8E4924B8",
             "trace": [
               "new CustomResource (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/core/lib/custom-resource.ts:133:21)",
               "new BucketDeployment (/Users/gofua/Documents/rs-school/AWS-Cloud-Developer-May-2023/nodejs-aws-shop-react/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:346:15)",

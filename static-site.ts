@@ -11,11 +11,11 @@ export class StaticSite extends Construct {
 
     const cloudfrontOAI = new cloudfront.OriginAccessIdentity(
       this,
-      "ANIVAL-OAI-0.0.1"
+      "ANIVAL-OAI-0.0.3"
     );
 
-    const siteBucket = new s3.Bucket(this, "ANIVALStatickBucket-0.0.1", {
-      bucketName: "anival-cloudfront-s3-0.0.2",
+    const siteBucket = new s3.Bucket(this, "ANIVALStatickBucket", {
+      bucketName: "anival-cloudfront-s3-0.0.3",
       websiteIndexDocument: "index.html",
       publicReadAccess: false,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
@@ -37,7 +37,7 @@ export class StaticSite extends Construct {
 
     const distribution = new cloudfront.CloudFrontWebDistribution(
       this,
-      "ANIVAL-distribution-0.0.1",
+      "ANIVAL-distribution-0.0.3",
       {
         originConfigs: [
           {
@@ -55,7 +55,7 @@ export class StaticSite extends Construct {
       }
     );
 
-    new s3deploy.BucketDeployment(this, "ANIVAL-Bucket-Deployment-0.0.1", {
+    new s3deploy.BucketDeployment(this, "ANIVAL-Bucket-Deployment-0.0.3", {
       sources: [s3deploy.Source.asset("./dist")],
       destinationBucket: siteBucket,
       distribution,

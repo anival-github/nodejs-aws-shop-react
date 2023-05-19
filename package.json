@@ -4,16 +4,16 @@
   "private": true,
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "npx tsc && vite build",
     "preview": "npm run build && vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
     "prettier": "prettier src --write",
-    "tsc:cdk-app": "npx tsc index.ts",
     "cdk": "cdk",
-    "synth": "cdk synth"
+    "synth": "cdk synth",
+    "deploy": "cdk deploy"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "^1.201.0",
