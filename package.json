@@ -13,7 +13,8 @@
     "prettier": "prettier src --write",
     "cdk": "cdk",
     "synth": "cdk synth",
-    "deploy": "cdk deploy"
+    "deploy": "cdk deploy",
+    "build-deploy": "npm run build && cdk synth && cdk deploy"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "^1.201.0",
