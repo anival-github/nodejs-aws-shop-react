@@ -37,7 +37,8 @@ Runs tests in console, in browser or with coverage.
 
 Runs linting and formatting for all files in `src` folder.
 
+### CloudFront URL - publicly available
+https://d2bxzgrun6jesh.cloudfront.net/
 
-<!-- ToD Store the links to
- - CloudFront URL and
- - S3-website in README.md file. -->
+### S3 URL - publicly unavailable
+http://anival-cloudfront-s3-0.0.3.s3-website-us-east-1.amazonaws.com
