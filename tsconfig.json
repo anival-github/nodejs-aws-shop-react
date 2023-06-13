@@ -29,7 +29,7 @@
     "paths": { "~/*": ["./*"] },
     "useDefineForClassFields": true,
     "skipLibCheck": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "resolveJsonModule": true,
