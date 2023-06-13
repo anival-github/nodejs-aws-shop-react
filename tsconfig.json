@@ -1,25 +1,45 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "~/*": ["./*"]
-    },
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "es2020",
+    "module": "CommonJS",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "es2020",
+    ],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "allowJs": false,
+    "baseUrl": "./src",
+    "paths": { "~/*": ["./*"] },
+    "useDefineForClassFields": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "static-site.ts", "index.ts"],
+  "exclude": [
+    "node_modules",
+    "cdk.out"
+  ]
 }
