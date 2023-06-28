@@ -40,9 +40,9 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
     });
 
     console.log("File to upload: ", file.name);
-    console.log("Uploading to: ", response.data);
+    console.log("Uploading to: ", response.data.signedURL);
 
-    const result = await fetch(response.data, {
+    const result = await fetch(response.data.signedURL, {
       method: "PUT",
       body: file,
     });
