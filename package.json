@@ -13,9 +13,9 @@
     "prettier": "prettier src --write",
     "cdk": "cdk",
     "synth": "cdk synth",
-    "deploy": "cdk deploy",
-    "build-deploy": "npm run build && cdk synth && cdk deploy",
-    "build-deploy-hot": "npm run build && cdk synth && cdk deploy --hotswap"
+    "deploy": "cdk deploy --require-approval 'never'",
+    "build-deploy": "npm run build && npm run synth && npm run deploy",
+    "build-deploy-hot": "npm run build && npm run synth && cdk deploy --hotswap"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "^1.201.0",
