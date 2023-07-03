@@ -22,11 +22,11 @@ axios.interceptors.response.use(
         alert("403 - Access denied");
         return;
       }
-      alert("Some error occured");
+      console.log("Some error occured");
     } else if (error.request) {
-      alert("Some error occured");
+      console.log("Some error occured");
     } else {
-      alert("Some error occured");
+      console.log("Some error occured");
     }
     return Promise.reject(error);
   }
