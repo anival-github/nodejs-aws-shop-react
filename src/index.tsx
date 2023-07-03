@@ -6,7 +6,31 @@ import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
+import axios, { AxiosError } from "axios";
 import { theme } from "~/theme";
+
+axios.interceptors.response.use(
+  (response) => response,
+  (error: AxiosError) => {
+    if (error.response) {
+      const status = error?.response?.status;
+      if (status === 401) {
+        alert("401 - You are unauthorised");
+        return;
+      }
+      if (status === 403) {
+        alert("403 - Access denied");
+        return;
+      }
+      alert("Some error occured");
+    } else if (error.request) {
+      alert("Some error occured");
+    } else {
+      alert("Some error occured");
+    }
+    return Promise.reject(error);
+  }
+);
 
 const queryClient = new QueryClient({
   defaultOptions: {

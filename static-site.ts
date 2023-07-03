@@ -1,21 +1,18 @@
-import * as s3 from "@aws-cdk/aws-s3";
-import * as iam from "@aws-cdk/aws-iam";
-import * as cloudfront from "@aws-cdk/aws-cloudfront";
-import * as s3deploy from "@aws-cdk/aws-s3-deployment";
+import * as s3 from "aws-cdk-lib/aws-s3";
+import * as iam from "aws-cdk-lib/aws-iam";
+import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
+import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import * as cdk from "aws-cdk-lib";
-import { Construct, Stack } from "@aws-cdk/core";
+import { Construct } from "constructs";
 
 export class StaticSite extends Construct {
-  constructor(parent: Stack, name: string) {
+  constructor(parent: cdk.Stack, name: string) {
     super(parent, name);
 
-    const cloudfrontOAI = new cloudfront.OriginAccessIdentity(
-      this,
-      "ANIVAL-OAI-0.0.10"
-    );
+    const cloudfrontOAI = new cloudfront.OriginAccessIdentity(this, "OAI");
 
-    const siteBucket = new s3.Bucket(this, "ANIVALStatickBucket", {
-      bucketName: "anival-cloudfront-s3-0.0.10",
+    const siteBucket = new s3.Bucket(this, "s3Bucket", {
+      bucketName: "anival-static-site-0.0.1",
       websiteIndexDocument: "index.html",
       publicReadAccess: false,
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
@@ -37,7 +34,7 @@ export class StaticSite extends Construct {
 
     const distribution = new cloudfront.CloudFrontWebDistribution(
       this,
-      "ANIVAL-distribution-0.0.10",
+      "staticSiteDistribution",
       {
         originConfigs: [
           {
@@ -55,7 +52,7 @@ export class StaticSite extends Construct {
       }
     );
 
-    new s3deploy.BucketDeployment(this, "ANIVAL-Bucket-Deployment-0.0.10", {
+    new s3deploy.BucketDeployment(this, "Deployment", {
       sources: [s3deploy.Source.asset("./dist")],
       destinationBucket: siteBucket,
       distribution,
