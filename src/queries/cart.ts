@@ -1,4 +1,4 @@
-import axios, { AxiosError } from "axios";
+import axios, { AxiosError, AxiosResponse } from "axios";
 import React from "react";
 import { useQuery, useQueryClient, useMutation } from "react-query";
 import API_PATHS from "~/constants/apiPaths";
@@ -6,12 +6,16 @@ import { CartItem } from "~/models/CartItem";
 
 export function useCart() {
   return useQuery<CartItem[], AxiosError>("cart", async () => {
-    const res = await axios.get<CartItem[]>(`${API_PATHS.cart}/profile/cart`, {
-      headers: {
-        Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
-      },
-    });
-    return res.data;
+    console.log('API_PATHS.cart: ', API_PATHS.cart);
+    const res = await axios.get<AxiosResponse<CartItem[]>>(
+      `${API_PATHS.cart}/profile/cart`,
+      {
+        headers: {
+          Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
+        },
+      }
+    );
+    return res.data.data;
   });
 }
 
