@@ -9,7 +9,7 @@ export function useAvailableProducts() {
     "available-products",
     async () => {
       const res = await axios.get<AvailableProduct[]>(
-        `${API_PATHS.bff}/products`
+        `${API_PATHS.product}/products`
       );
       return res.data;
     }
@@ -29,7 +29,7 @@ export function useAvailableProduct(id?: string) {
     ["product", { id }],
     async () => {
       const res = await axios.get<AvailableProduct>(
-        `${API_PATHS.bff}/products/${id}`
+        `${API_PATHS.product}/products/${id}`
       );
       return res.data;
     },
@@ -50,7 +50,7 @@ export function useUpsertAvailableProduct() {
   return useMutation((values: AvailableProduct) =>
     {
       console.log('create product: ', values);
-      return axios.post<AvailableProduct>(`${API_PATHS.bff}/products`, values, {
+      return axios.post<AvailableProduct>(`${API_PATHS.product}/products`, values, {
       headers: {
         Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
       },
@@ -60,7 +60,7 @@ export function useUpsertAvailableProduct() {
 
 export function useDeleteAvailableProduct() {
   return useMutation((id: string) =>
-    axios.delete(`${API_PATHS.bff}/products/${id}`, {
+    axios.delete(`${API_PATHS.product}/products/${id}`, {
       headers: {
         Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
       },
