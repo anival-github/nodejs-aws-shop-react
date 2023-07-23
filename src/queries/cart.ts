@@ -6,7 +6,6 @@ import { CartItem } from "~/models/CartItem";
 
 export function useCart() {
   return useQuery<CartItem[], AxiosError>("cart", async () => {
-    console.log('API_PATHS.cart: ', API_PATHS.cart);
     const res = await axios.get<AxiosResponse<CartItem[]>>(
       `${API_PATHS.cart}/profile/cart`,
       {
