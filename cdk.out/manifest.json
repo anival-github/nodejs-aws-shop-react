@@ -1,0 +1,148 @@
+{
+  "version": "32.0.0",
+  "artifacts": {
+    "ANIVALMyStaticWebsite.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "ANIVALMyStaticWebsite.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "ANIVALMyStaticWebsite": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "ANIVALMyStaticWebsite.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6b800b4edf3f94ecd306c488183434f7c640484102d4e42864c724f95b56e18a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "ANIVALMyStaticWebsite.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "ANIVALMyStaticWebsite.assets"
+      ],
+      "metadata": {
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/OAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsiteOAIE88DBF8F"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/s3Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsites3Bucket98FF6295"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/s3Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsites3BucketPolicyCC6BDE04"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/s3Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsites3BucketAutoDeleteObjectsCustomResourceB2F80902"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/staticSiteDistribution/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsitestaticSiteDistributionCFDistribution419880E6"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/Deployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsiteDeploymentAwsCliLayer1ED4E540"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/ANIVALStaticWebsite/Deployment/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ANIVALStaticWebsiteDeploymentCustomResource38B7C547"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/DefaultCrNodeVersionMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DefaultCrNodeVersionMap"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ANIVALMyStaticWebsite/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "ANIVALMyStaticWebsite"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
