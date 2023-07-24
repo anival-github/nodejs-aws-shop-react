@@ -18,6 +18,7 @@ test("Renders products list", async () => {
       description: "Product 1 description",
       price: 1,
       count: 1,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
     },
     {
       id: "2",
@@ -25,6 +26,7 @@ test("Renders products list", async () => {
       description: "Product 2 description",
       price: 2,
       count: 2,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
     },
   ];
   server.use(

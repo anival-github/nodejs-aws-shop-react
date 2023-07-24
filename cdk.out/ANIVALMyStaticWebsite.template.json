@@ -265,7 +265,7 @@
      }
     ],
     "SourceObjectKeys": [
-     "1b5c40ca30b5e08b9a2da8502eb77f40069164f5c622fb3a3ae921549abfd3ce.zip"
+     "08c9a1ba3a34f1871af7f77843729ec408664e6eb9549d1e9097db34022a1514.zip"
     ],
     "DestinationBucketName": {
      "Ref": "ANIVALStaticWebsites3Bucket98FF6295"
@@ -532,7 +532,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/21RTWsCMRD9Ld5jWi0Ur7oiFFoqCu1xySajjGYTySTKEva/N9nUj0JP8+bNm5nHzJTPXvnzSFxoLNVxrLHhceuFPLJE1VFqG9TOWeN5/HS4RzOXEojeFBiPvmPVzlRZs8qa/xW38jc0SyTvsAkercm9j3nP6IXHRZBH8Ln2i0pYW42yu9O/eUkWgiB311HBSduuTat5KS1vBBNE4InPc+iZFm2jBI9p4rvowH2Bo2xqi2avwVuzCkYONm8gSa+4ZyhaHjdWQ6aHeLdYUN+zKpC37QbIBieL8orL/lrn3XW6tdTI5xeqNA522GAzfSIddJ8bP8TpNMA/I9fOnlEl+eOOyhqFxaWxCviBns6TGZ9M+WR0IMSxC+k1LfBNiT8OoT/YBAIAAA=="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/21RTWsCMRD9Ld5jWitIr7oiFFoqCu1xySajjGYTySTKEva/N9nUj0JP8+bNm5nHzAt/nfHnkbjQWKrjWGPD49YLeWSJqqPUNqids8bz+Olwj2YuJRC9KTAefceqnamyZpU1/ytu5W9olkjeYRM8WpN7H/Oe0ZTHRZBH8Ln2i0pYW42yu9O/eUkWgiB311HBSduuTat5KS1vBBNE4InPc+iZFm2jBI9p4rvowH2Bo2xqi2avwVuzCkYONm8gSa+4ZyhaHjdWQ6aHeLdYUN+zKpC37QbIBieL8orL/lrn3XW6tdTI5xeqNA522GAzfSIddJ8bP8TpNMA/I9fOnlEl+eOOyhqFxaWxCviBns6TGZ9M+WR0IMSxC+k1LfBNiT9kT8EnBAIAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "ANIVALMyStaticWebsite/CDKMetadata/Default"
