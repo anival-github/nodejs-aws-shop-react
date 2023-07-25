@@ -10,6 +10,7 @@ export const products: Product[] = [
     price: 24,
     title: "ProductOne",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
   {
     description: "Short Product Description7",
@@ -17,6 +18,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductTitle",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
   {
     description: "Short Product Description2",
@@ -24,6 +26,7 @@ export const products: Product[] = [
     price: 23,
     title: "Product",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
   {
     description: "Short Product Description4",
@@ -31,6 +34,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductTest",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
   {
     description: "Short Product Descriptio1",
@@ -38,6 +42,7 @@ export const products: Product[] = [
     price: 23,
     title: "Product2",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
   {
     description: "Short Product Description7",
@@ -45,6 +50,7 @@ export const products: Product[] = [
     price: 15,
     title: "ProductName",
     count: 24,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
   },
 ];
 
@@ -60,6 +66,7 @@ export const cart: CartItem[] = [
       price: 24,
       title: "ProductOne",
       count: 2,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
     },
     count: 2,
   },
@@ -70,6 +77,7 @@ export const cart: CartItem[] = [
       price: 15,
       title: "ProductName",
       count: 5,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWIECe8iudOKz8XuHDqzzY_PmXl74S7ew7w&usqp=CAU",
     },
     count: 5,
   },
